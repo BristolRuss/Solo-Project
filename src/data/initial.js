@@ -1,7 +1,8 @@
 const initial = {
-    names: [],
+    players: [],
     target: 21,
     alternate: 5,
+    name: "",
     settingsSaved: false
 }
 

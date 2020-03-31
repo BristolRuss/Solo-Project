@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import Settings from './Settings';
-import { save, clear } from '../../data/actions';
+import { save } from '../../data/actions';
 
 const mapStateToProps = (state) => {
     return {
@@ -11,7 +11,6 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        reset: () => dispatch(clear()),
         handleFormSubmit: (aim, switchOn) => dispatch(save(aim, switchOn))
     }
 }
