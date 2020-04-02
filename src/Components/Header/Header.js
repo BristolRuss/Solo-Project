@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = ({reset}) => {
     const handleReset = () => {
@@ -10,7 +11,7 @@ const Header = ({reset}) => {
             <header className="App-header">
                 <h1>Ping Pong Tournament</h1>
             </header>
-            <button className = "btn btn-primary resetButton" onClick = {handleReset}>Reset</button>
+            <Link to = "/"><button className = "btn btn-primary resetButton" onClick = {handleReset}>Reset</button></Link>
         </>
     );
 }

@@ -4,6 +4,7 @@ import { HashRouter as Router, Route, Switch} from "react-router-dom";
 import Header from '../Header';
 import Settings from '../Settings';
 import Players from '../Players';
+import MatchUps from '../MatchUps';
 
 function App({settingsSaved}) {
   return (
@@ -19,6 +20,9 @@ function App({settingsSaved}) {
           <Switch>
             <Route exact path = "/">
               <Players />
+            </Route>
+            <Route exact path = "/matches">
+              <MatchUps />
             </Route>
           </Switch>
         }

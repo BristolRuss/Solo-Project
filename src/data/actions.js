@@ -17,6 +17,12 @@ export const randomise = () => {
     }
 }
 
+export const quarterFinals = () => {
+    return {
+        type: "QUARTER_FINALS"
+    }
+}
+
 export const save = (aim, switchOn) => {
     return {
         type: "SAVE_SETTINGS",

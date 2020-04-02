@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Chalk';
+  src: url('./fonts/SqueakyChalkSound.ttf') format('truetype');
+}
+
 body {
   margin: 0;
   color: white;
@@ -13,6 +18,48 @@ body {
 
 .Wrapper {
   margin: 20px 10% 0px 10%;
+}
+
+.tableWrapper{  
+  font-family: 'Chalk', Arial, Helvetica, sans-serif;
+  float: left;
+  display: block;
+  text-align: center;
+  min-height: 60vh;
+  background-image: url('./images/Eazel2.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-width: 60vw;
+}
+
+.playerTable {
+  display: flex;
+  justify-content: center;
+}
+
+.playerInfo {
+  padding-right: 30px;
+}
+
+.tableButtons{
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  position: relative;
+  bottom: -160px;
+}
+
+.games {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.matchUps {
+  font-family: 'Chalk';
+  display: inline-block;
+  text-align: center;
+  
 }
 
 label {

@@ -1,8 +1,8 @@
 const initial = {
     players: [],
+    quarterFinals: [],
     target: 21,
     alternate: 5,
-    name: "",
     settingsSaved: false
 }
 
