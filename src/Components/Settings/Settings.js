@@ -24,7 +24,7 @@ const Settings = ({target, alternate, handleFormSubmit}) => {
                 <div className = "form-group">
                     <label>Winning Score</label>
                     <input onChange = {handleTarget} value = {aim} type = "number" className="form-control"></input>
-                    <label>Alternate Every</label>
+                    <label>Alternate Server Every</label>
                     <input onChange = {handleAlternate} value = {switchOn} type = "number" className="form-control"></input>
                     <button className = "btn btn-dark">Save Settings</button>
                 </div>

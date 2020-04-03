@@ -6,7 +6,8 @@ const mapStateToProps = (state) => {
     return {
         players: Object.values(state.players),
         pairings: Object.values(state.pairings),
-        roundsCompleted: state.roundsCompleted
+        roundsCompleted: state.roundsCompleted,
+        currentMatch: state.currentMatch
     }
 };
 

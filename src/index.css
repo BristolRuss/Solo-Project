@@ -6,10 +6,10 @@
 body {
   margin: 0;
   color: white;
-  background-image: url('./images/4030155973_fe6a9bc473_o.jpg');
-  background-position: fixed;
+  background-image: url('./images/30426.jpg');
+  background-size: cover;
     background-repeat: no-repeat;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Orbitron', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -22,11 +22,22 @@ body {
 
 .App-header {
   display: flex;
+  background: black;
+  border-radius: 25px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  margin-bottom: 30px;
+}
+
+.selected {
+  background-image: linear-gradient(-45deg,rgba(18, 26, 21, .5), rgba(00,00,00,.8));
+  padding: 10px;
+  margin:  -10px;
+  border-radius: 15px;
+  box-shadow: 0 40px 80px rgb(2, 4, 5);
 }
 
 .header {
@@ -37,20 +48,34 @@ body {
 
 .tableWrapper{  
   font-family: 'Chalk', Arial, Helvetica, sans-serif;
-  float: left;
+  font-size: 25px;
   display: block;
   text-align: center;
-  min-height: 60vh;
-  background-image: url('./images/Eazel2.png');
+  background: url('./images/blackboard.png');
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  min-width: 60vw;
+  min-height: 60vh;
+  min-width: 50vw; 
+}
+
+.tableWrapper h1{
+  padding-top: 30px;
+}
+
+.players {
+  display: flex;
 }
 
 .playerTable {
+  margin-top: 10px;
   display: flex;
   justify-content: center;
+}
+
+.proceed {
+  position: relative;
+  left: 40%;
 }
 
 .playerInfo {
@@ -58,6 +83,7 @@ body {
 }
 
 .tableButtons{
+  font-family: 'Orbitron';
   display: flex;
   justify-content: space-evenly;
   text-align: center;
@@ -68,6 +94,14 @@ body {
 .games {
   display: flex;
   justify-content: space-evenly;
+}
+
+.card {
+  box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, .4);
+}
+
+button {
+  box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, .4);
 }
 
 .matchUps {
@@ -81,7 +115,7 @@ label {
 }
 
 .form-control {
-  width: 25%;
+  width: 25vw;
 }
 
 .resetButton {
