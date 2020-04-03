@@ -9,7 +9,7 @@ const Header = ({reset}) => {
     return (
         <>
             <header className="App-header">
-                <h1>Ping Pong Tournament</h1>
+                <h1 className="header">Ping Pong Tournament</h1>
             </header>
             <Link to = "/"><button className = "btn btn-primary resetButton" onClick = {handleReset}>Reset</button></Link>
         </>

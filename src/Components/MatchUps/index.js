@@ -1,16 +1,19 @@
 import { connect } from 'react-redux';
 import MatchUps from './MatchUps';
+import { semiFinals, Final } from '../../data/actions';
 
 const mapStateToProps = (state) => {
     return {
         players: Object.values(state.players),
-        quarterFinals: Object.values(state.quarterFinals)
+        pairings: Object.values(state.pairings),
+        roundsCompleted: state.roundsCompleted
     }
 };
 
 const mapDispatchToProps = dispatch => {
     return {
-
+        handleSemiFinals: () => dispatch(semiFinals()),
+        handleFinal: () => dispatch(Final())
     }
 };
 
