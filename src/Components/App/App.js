@@ -15,10 +15,11 @@ function App({settingsSaved, matchesUnderway}) {
         {!settingsSaved ? 
           <Settings /> 
         :
-          (!matchesUnderway ?
+        // if settings have been saved then this checks if the pairings have been confirmed
+          !matchesUnderway ?
             <Players />
             :
-            <MatchUps />)
+            <MatchUps />
         }
       </div>
     </div>

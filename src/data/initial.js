@@ -3,7 +3,7 @@ const initial = {
     pairings: [],
     semiFinals: [],
     final:[],
-    target: 5,
+    target: 21,
     alternate: 5,
     settingsSaved: false,
     matchesUnderway: false,

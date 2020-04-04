@@ -41,6 +41,8 @@ const Players = ({players, handleAddPlayer, handleRandomise, addToQF, pairings})
                 </form>
                 : undefined}
                 <PlayerTable />
+                {/* once all players have been added this will display the potential matchups.
+                the user can either go with the selected or randomise again until happy */}
                 {players.length === 8 ?
                     <div>
                         {pairings.map((match, index) =>

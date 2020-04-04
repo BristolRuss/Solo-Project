@@ -1,5 +1,6 @@
 import initial from "./initial";
 
+//sets matchesUnderway to true. This will allow the game to proceed to the game section
 const matchesUnderway = (state, action) => {
     return {
         ...state,
