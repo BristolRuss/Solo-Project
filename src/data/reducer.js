@@ -1,5 +1,12 @@
 import initial from "./initial";
 
+const matchesUnderway = (state, action) => {
+    return {
+        ...state,
+        matchesUnderway: action.matchesUnderway
+    }
+}
+
 // These two actions are responsible for increasing the player scores
 const player1 = state => { 
     let newArray = [...state.pairings];
@@ -172,6 +179,7 @@ const reducer = (state, action) => {
         case "PLAYER1SCORES": return winner(server(player1(state)));
         case "PLAYER2SCORES": return winner(server(player2(state)));
         case "RANDOMISE" : return randomise(state);
+        case "MATCHES_UNDERWAY" : return matchesUnderway(state, action);
         case "SEMI_FINALS" : return semiFinals(state);
         case "FINAL" : return Final(state);
         case "QUARTER_FINALS" : return quarterFinals(state);

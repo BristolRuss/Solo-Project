@@ -29,6 +29,13 @@ export const handleIncrement2 = () => {
     }
 }
 
+export const matchesUnderway = (value) => {
+    return {
+        type: "MATCHES_UNDERWAY",
+        matchesUnderway: value
+    }
+}
+
 export const quarterFinals = () => {
     return {
         type: "QUARTER_FINALS"

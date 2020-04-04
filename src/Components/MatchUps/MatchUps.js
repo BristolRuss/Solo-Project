@@ -38,8 +38,8 @@ const MatchUps = ({pairings, handleSemiFinals, handleFinal, roundsCompleted, cur
                 <h1 className="matchUps">Congratulations! Your champion is {pairings[0].player1.gamesWon === 3 ? pairings[0].player1.name : pairings[0].player2.name}!</h1> :
                 undefined
             }
-            {roundsCompleted === 1 ? <button className = "proceed btn btn-secondary" onClick = {semis}>Proceed to Semi Finals</button> : undefined}
-            {roundsCompleted === 3 ? <button className = "proceed btn btn-secondary" onClick = {final}>Proceed to Final</button> : undefined}
+            {roundsCompleted === 1 ? <button className = "proceed btn btn-dark" onClick = {semis}>Proceed to Semi Finals</button> : undefined}
+            {roundsCompleted === 3 ? <button className = "proceed btn btn-dark" onClick = {final}>Proceed to Final</button> : undefined}
         </>
     )
 }

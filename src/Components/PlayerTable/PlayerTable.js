@@ -1,15 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
-const PlayerTable = ({players, handleRandomise, handleQF}) => {
+const PlayerTable = ({players, handleRandomise, handleQF, proceedMatches}) => {
 
-    // Randomises players
+    // Randomises players and changes the matchups
     const randomise = () => {
         handleRandomise();
+        handleQF();
     };
 
-    const QF = () => {
-        handleQF();
+    const handleMatches = () => {
+        proceedMatches(true);
     }
 
     return (
@@ -31,8 +31,8 @@ const PlayerTable = ({players, handleRandomise, handleQF}) => {
                 can then randomise the table further, or proceed to the games. */}
                 {players.length >= 8 ?
                 <nav className="tableButtons">
-                    <button onClick={randomise} className="btn btn-primary">Randomise</button>
-                    <Link to = "/matches"><button onClick = {QF} className="btn btn-primary">Proceed To Games</button></Link>
+                    <button onClick={randomise} className="btn btn-dark">Randomise Again</button>
+                    <button onClick={handleMatches} className="btn btn-dark">Proceed To Games</button>
                 </nav>
                 :
                 undefined}

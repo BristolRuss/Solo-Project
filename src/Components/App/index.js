@@ -3,7 +3,8 @@ import App from './App';
 
 const mapStateToProps = (state) => {
     return {
-        settingsSaved: state.settingsSaved
+        settingsSaved: state.settingsSaved,
+        matchesUnderway: state.matchesUnderway
     }
 }
 

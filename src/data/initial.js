@@ -6,6 +6,7 @@ const initial = {
     target: 5,
     alternate: 5,
     settingsSaved: false,
+    matchesUnderway: false,
     server: 1,
     winner: 0,
     deuce: 0,
