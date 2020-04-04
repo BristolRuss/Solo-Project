@@ -2,7 +2,7 @@ import React from 'react';
 import Player1 from '../Player1';
 import Player2 from '../Player2';
 
-const MatchUps = ({pairings, handleSemiFinals, handleFinal, roundsCompleted, currentMatch}) => {
+const MatchUps = ({pairings, deuce, handleSemiFinals, handleFinal, roundsCompleted, currentMatch}) => {
 
     // these two actions will sort pairings for the later rounds
     const semis = () => {
@@ -53,10 +53,13 @@ const MatchUps = ({pairings, handleSemiFinals, handleFinal, roundsCompleted, cur
             {roundsCompleted === 1 || roundsCompleted === 3 || roundsCompleted === 5 ?
             undefined :
             // two player scoring components
-            <div className="imageLocation row mb-4">
-                <Player1 />
-                <Player2 />
-            </div> 
+            <>
+                <div className="imageLocation row mb-4">
+                    <Player1 />
+                    <Player2 />
+                </div>
+                {deuce === 1 ? <h2 className="alert alert-warning">Deuce!</h2> : null} 
+            </>
             }
             {/* buttons will be displayed when appropriate */}
             {roundsCompleted === 1 ? <button className = "proceed btn btn-dark" onClick = {semis}>Proceed to Semi Finals</button> : undefined}

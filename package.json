@@ -1,5 +1,6 @@
 {
   "name": "ping-pong-tournament",
+  "homepage": "https://BristolRuss.github.io/Solo-Project/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

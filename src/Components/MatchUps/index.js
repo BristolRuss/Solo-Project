@@ -7,7 +7,8 @@ const mapStateToProps = (state) => {
         players: Object.values(state.players),
         pairings: Object.values(state.pairings),
         roundsCompleted: state.roundsCompleted,
-        currentMatch: state.currentMatch
+        currentMatch: state.currentMatch,
+        deuce: state.deuce
     }
 };
 
